@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Eventos de Fortaleza</title>
+
+    <style>
+        /* Estilo geral da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffefe;
+            color: #201818;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #ab82e0;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid #674077;
+        }
+
+        h1 {
+            color: #110933;
+            font-family: Georgia, serif;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        /* Descrição inicial */
+        #apresentacao {
+            background-color: #7365c4;
+            color: #07194d70;
+            text-align: center;
+            font-size: 18px;
+            padding: 15px;
+            border-radius: 10px;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        /* Conteúdo principal */
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Cartões dos eventos */
+        section {
+            background-color: rgb(202, 182, 250);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(99, 79, 189, 0.08);
+            border-left: 6px solid #8e44ad;
+        }
+
+        h2 {
+            color: #864f9e;
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        /* Títulos dos eventos */
+        .titulo-evento {
+            letter-spacing: 2px;
+        }
+
+        /* Parágrafos */
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Datas dos eventos */
+        .data-evento {
+            color: #679e98;
+            font-weight: bold;
+        }
+
+        /* Locais dos eventos */
+        .local-evento {
+            color: #21618c;
+            font-weight: bold;
+        }
+
+        /* Listas de atrações */
+        li {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li::marker {
+            color: #8e44ad;
+        }
+
+        /* Evento em destaque */
+        .evento-destaque {
+            background-color: #8a5c9b;
+            border-left: 6px solid #161616;
+        }
+
+        .evento-destaque .descricao {
+            color: #6c3483;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Link externo */
+        a {
+            color: #2e4d63;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #e74c3c;
+            text-decoration: underline;
+        }
+
+        /* Rodapé e contato */
+        footer {
+            background-color: #5a417a;
+            color: #557462;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        footer h2 {
+            color: #303c66;
+        }
+
+        footer p {
+            text-align: center;
+        }
+
+        /* Ajustes para telas pequenas */
+        @media (max-width: 600px) {
+            header {
+                padding: 30px 15px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            main {
+                padding: 0 12px;
+                margin: 25px auto;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Agenda de Eventos de Fortaleza</h1>
+        <p id="apresentacao">
+            <strong>Confira os principais eventos culturais da nossa cidade!</strong>
+        </p>
+    </header>
+
+    <main>
+
+        <section class="evento-destaque">
+            <h2 class="titulo-evento">1. Festival de Moda e Estilo</h2>
+
+            <p class="descricao">
+                O <strong>Festival de Moda e Estilo</strong> é um evento dedicado à
+                moda, à criatividade e às tendências, reunindo amantes da cultura
+                fashion da cidade. A programação contará com desfiles, exposição
+                de produções autorais e atividades inspiradas na moda contemporânea
+                e na cultura pop.
+            </p>
+
+            <p><strong>Data:</strong>
+                <span class="data-evento">24 de outubro de 2026</span>
+            </p>
+
+            <p><strong>Local:</strong>
+                <span class="local-evento">Centro de Eventos</span>
+            </p>
+
+            <p><strong>Atrações do Festival:</strong></p>
+            <ul>
+                <li>Desfile de moda e streetwear.</li>
+                <li>Concurso de looks criativos.</li>
+                <li>Exposição de peças customizadas por estilistas locais.</li>
+                <li>Espaço para fotografias e tendências fashion.</li>
+            </ul>
+
+            <p>
+                <strong>Saiba mais:</strong>
+                <a href="https://www.ceara.gov.br/"
+                   target="_blank" rel="noopener noreferrer">
+                    Portal oficial do Governo do Ceará
+                </a>
+            </p>
+        </section>
+
+        <section>
+            <h2 class="titulo-evento">2. Feira Literária</h2>
+
+            <p>
+                A <strong>Feira Literária</strong> é uma feira cultural que celebra
+                a literatura e incentiva o contato com os livros. O evento reunirá
+                leitores, escritores, estudantes e artistas em uma programação
+                com atividades para diferentes idades.
+            </p>
+
+            <p><strong>Data:</strong>
+                <span class="data-evento">10 de novembro de 2026</span>
+            </p>
+
+            <p><strong>Local:</strong>
+                <span class="local-evento">Shopping Iguatemi Bosque</span>
+            </p>
+
+            <p><strong>Atrações da Feira:</strong></p>
+            <ul>
+                <li>Feira de livros e autores independentes.</li>
+                <li>Sessões de poesia e sarau.</li>
+                <li>Encontros com escritores.</li>
+                <li>Troca de livros entre visitantes.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="titulo-evento">3. Festival de Talentos</h2>
+
+            <p>
+                O <strong>Festival de Talentos</strong> valoriza os talentos da
+                população, oferecendo um palco para pessoas que desejam compartilhar
+                suas habilidades artísticas. A programação será aberta ao público
+                e reunirá diferentes formas de expressão.
+            </p>
+
+            <p><strong>Data:</strong>
+                <span class="data-evento">15 de dezembro de 2026</span>
+            </p>
+
+            <p><strong>Local:</strong>
+                <span class="local-evento">Centro de Eventos</span>
+            </p>
+
+            <p><strong>Atrações do Festival:</strong></p>
+            <ul>
+                <li>Apresentações de canto e dança.</li>
+                <li>Shows de bandas e músicos locais.</li>
+                <li>Performances teatrais.</li>
+                <li>Concurso de talentos com votação do público.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>Entre em contato</h2>
+        <p><strong>E-mail:</strong> eventos@fortal.com</p>
+        <p><strong>Organização:</strong> Comissão de Eventos de Fortaleza</p>
+        <p><strong>&copy; 2026 - Agenda de Eventos de Fortaleza</strong></p>
+    </footer>
+
+</body>
+</html>
